@@ -12,3 +12,17 @@ function myMove() {
 		  clearInterval(id);
   }
 }
+function myBlue() {
+  var elem = document.getElementById("hanimate");   
+  var posTop = 0;
+  var posLeft = 350;
+  var id = setInterval(frame, 5);
+  function frame() {
+	  posTop++;
+	  posLeft--;
+	  elem.style.top = posTop + "px"; 
+	  elem.style.left = posLeft + "px"; 
+	  if ((posTop == 350) && (posLeft == 0))
+		  clearInterval(id);
+  }
+}

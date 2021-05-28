@@ -14,16 +14,25 @@
 			  height: 50px;
 			  position: absolute;
 			  background-color: red;
-			}	
+			}
+      #hanimate {
+			  width: 50px;
+			  height: 50px;
+			  position: absolute;
+        left: 350px;
+			  background-color: blue;
+			}
 		</style>
     </head>
 
 	<body>
 		<script src="motion.js"></script>	
-		<button type="button" onclick="myMove()">Click Me</button> 
+		<button type="button" onclick="myMove()" style="background-color:red;">Click Me</button>
+    <button type="button" onclick="myBlue()" style="background-color:blue;">Blue</button> 
 		<br><br>
 		<div id ="container">
 		  <div id ="animate"></div>
+      <div id ="hanimate"></div>
 		</div>
 		
 	</body>
